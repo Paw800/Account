@@ -15,6 +15,31 @@
             height: 100vh;
             margin: 0;
         }
+        .header {
+            width: 100%;
+            background-color: red;
+            padding: 10px 20px;
+            box-sizing: border-box;
+        }
+        .header img {
+            width: 120px;
+            height: auto;
+        }
+        nav {
+            text-align: center;
+            font-size: 32px;
+            color: red;
+            margin-bottom: 20px;
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            list-style: none;
+        }
+        nav ul li {
+            margin-right: 40px;
+        }
         .container {
             background-color: white;
             padding: 20px;
@@ -23,7 +48,7 @@
             width: 300px;
             text-align: center;
         }
-        h1 {
+        h2 {
             color: red;
         }
         form {
@@ -62,8 +87,21 @@
     </style>
 </head>
 <body>
+    <header class="header">
+        <img src="https://www.theexaminernews.com/examiner-news/wp-content/uploads/2012/01/Pizza_Hut.png" alt="Pizza Hut Logo">
+        <nav>
+            <ul>
+                <li><a href="https://paw800.github.io/Home/">Home</a></li>
+                <li><a href="https://paw800.github.io/Menu/">Menu</a></li>
+                <li><a href="https://paw800.github.io/Account/">Account</a></li>
+                <li><a href="https://paw800.github.io/Order/">Order</a></li>
+                <li><a href="https://uae.pizzahut.me/en/contactUs">Service</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <div class="container" id="login-container">
-        <h1>Login</h1>
+        <h2>Login</h2>
         <form id="login-form">
             <label for="username">Username</label>
             <input type="text" id="username" name="username" required>
@@ -77,16 +115,16 @@
     </div>
 
     <div class="container" id="register-container" style="display:none;">
-        <h1>Register</h1>
+        <h2>Register</h2>
         <form id="register-form">
             <label for="new-username">Username</label>
-            <input type="text" id="new-username" name="username" required>
+            <input type="text" id="new-username" name="new-username" required>
             
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
+            <label for="new-email">Email</label>
+            <input type="email" id="new-email" name="new-email" required>
             
             <label for="new-password">Password</label>
-            <input type="password" id="new-password" name="password" required>
+            <input type="password" id="new-password" name="new-password" required>
             
             <input type="submit" value="Register">
         </form>
